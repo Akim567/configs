@@ -1,5 +1,5 @@
 -- Leader
-vim.g.mapleader = " "
+vim.g.mapleader = " " -- Устанавливает "пробел" в качестве основного лидера (leader key) для привязки пользовательских клавиш
 
 -- Buffers
 vim.keymap.set('n', '<leader>w', ':w<CR>')
@@ -19,9 +19,9 @@ vim.keymap.set('n', '|', ':vsplit k<CR>')
 vim.keymap.set('n', '\\', ':split k<CR>')
 
 -- Tabs
-vim.keymap.set('n', '<Tab>', ':BufferlineCycleNext<CR>')
+vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>')
 vim.keymap.set('n', '<s-Tab>', ':BufferLineCyclePrev<CR>')
-vim.keymap.set('n', '<leader>x', ':BufferLinePickclose<CR>')
+vim.keymap.set('n', '<leader>x', ':BufferLinePickClose<CR>')
 vim.keymap.set('n', '<c-x>', ':BufferLineCloseOthers<CR>')
 
 
