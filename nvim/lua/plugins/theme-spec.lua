@@ -1,23 +1,21 @@
 return {
     {
         'ellisonleao/gruvbox.nvim',
-        name = 'gruvbox',
+        lazy = true,
+        priority = 1000,
+        --config = function()
+          --  vim.cmd('colorscheme gruvbox-material') -- Устанавливаем цветовую схему
+        --end,
+		opts = {},
+    },
+	{
+        'folke/tokyonight.nvim',
+        name = 'tokyonight',
         lazy = false,
         priority = 1000,
 		config = function()
-			vim.api.nvim_create_autocmd("VimEnter", {
-			   callback = function()
-			     vim.cmd([[colorscheme gruvbox]])
-			   end,
-    })
-	end,
-        opts = {},
-    },
-    {
-        'folke/tokyonight.nvim',
-        name = 'tokyonight',
-        lazy = true,
-        priority = 1000,
+            vim.cmd([[colorscheme tokyonight]])
+        end,
         opts = {},
     },
     {

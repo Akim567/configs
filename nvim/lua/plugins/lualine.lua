@@ -3,9 +3,9 @@ return {
     dependencies = {'nvim-tree/nvim-web-devicons'},
     config = function()
         require('lualine').setup({
-		optrions = {
-			globalstatus = true,
-			theme = 'gruvbox-material',
+		options = {
+		globalstatus = true,
+		theme = 'tokyonight',
 			}
 		})
     end
